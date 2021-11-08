@@ -99,7 +99,7 @@
           <li class="nav-item mr-auto">
             <a class="navbar-brand" href="index.html">
               <span class="brand-logo">
-                <img src="../assets/images/logo/download22.jfif" alt="AYMC" height="" width="200px">
+                <img src="../assets/images/logo/dowload22.jfif" alt="AYMC" height="" width="200px">
               </span>
               <h2 class="brand-text">AYMC</h2>
             </a>
@@ -113,13 +113,21 @@
           
           <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="member_registration.html"><i data-feather='trending-up'></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Member registration</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="member_registration.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Member Registration</span></a>
           </li>
-          <li class="active nav-item"><a class="d-flex align-items-center" href="user_manage.html"><i data-feather='edit'></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User manage</span></a>
+          <li class="active nav-item"><a class="d-flex align-items-center" href="user_manage.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="expenses.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="expenses">Expenses</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="expenses.html"><i data-feather='trending-up'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenses</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="report.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Report</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="report.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Reports</span></a>
+            <ul>
+              <li><a class="d-flex align-items-center" href="report1.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Total Contribution</span></a>
+              </li>
+              <li><a class="d-flex align-items-center" href="report2.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Total Member Registered</span></a>
+              </li>
+              <li><a class="d-flex align-items-center" href="report3.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total expenses</span></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
@@ -133,21 +141,47 @@
       <div class="content-wrapper">
         <div class="content-header row">
         </div>
-        <div class="form-modal-ex">
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline-primary" id = "right" data-toggle="modal" data-target="#inlineForm">
-            <i class=""></i> Add user
-          </button>
-          <!-- Modal -->
-          <div
-            class="modal fade text-left"
+        <div class="row" id="table-head">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h2>User Management</h2>
+                
+
+                <div class="row">  
+                  <div class="btn-group mr-2">
+                    <button
+                      type="button"
+                      class="btn btn-dark me-1 w-sm-100"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false">
+                      <i data-feather='arrow-down'></i>
+                      Import
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="javascript:void(0);">csv</a>
+                      <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+                      <a class="dropdown-item" href="javascript:void(0);">Excel</a>
+                    </div>
+                  </div>
+                    
+                   <div class="form-modal-ex">
+                  <div class="text-right">
+                   <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
+                    <i data-feather='user-plus'></i>
+                       Add user
+                   </button></div>
+                   <!-- Modal -->
+           <div
+            class="modal fade text-right"
             id="inlineForm"
             tabindex="-1"
             role="dialog"
             aria-labelledby="myModalLabel33"
             aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
+          > 
+           <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
                   <h4 class="modal-title" id="myModalLabel33">Add user</h4>
@@ -157,12 +191,12 @@
                 </div>
                 <form action="#">
                   <div class="modal-body">
-                    <label>First name: </label>
+                    <label>First Name: </label>
                     <div class="form-group">
                       <input type="text" placeholder="First-name" class="form-control" />
                     </div>
 
-                    <label>Last name: </label>
+                    <label>Last Name: </label>
                     <div class="form-group">
                       <input type="text" placeholder="Last-name" class="form-control" />
                     </div>
@@ -175,30 +209,152 @@
 
                     <label>Status: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="status" class="form-control" />
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Active</option>
+                          <option value="rectangle">Passive</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
                     </div>
                   
       
                     <label>Role: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="role" class="form-control" />
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Admin</option>
+                          <option value="rectangle">Member</option>
+                          <option value="rectangle">Assist admin</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
                     </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
                   </div>
+                </div>
+                  
                 </form>
-              </div>
+              </div> -->
+             </div> 
+                   </div>
+                  </div>
+                </div>
+                </div>
+          
+           </div>
+         </div>
+
+</div>
+        <!-- <div class="form-modal-ex"> -->
+          <!-- Button trigger modal -->
+          <!-- <div class="text-right">
+            <div class="btn-group mr-2">
+            <button
+              type="button"
+              class="btn btn-dark me-1 w-sm-100"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Import
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="javascript:void(0);">csv</a>
+              <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+              <a class="dropdown-item" href="javascript:void(0);">excel</a>
             </div>
-          </div>
-        </div>
+          </div> -->
+          <!-- <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
+           Add user
+          </button></div> -->
+          <!-- Modal -->
+          <!-- <div
+            class="modal fade text-right"
+            id="inlineForm"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel33"
+            aria-hidden="true"
+          > -->
+            <!-- <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form action="#">
+                  <div class="modal-body">
+                    <label>First Name: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="First-name" class="form-control" />
+                    </div>
+
+                    <label>Last Name: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Last-name" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <label>Email: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Email Address" class="form-control" />
+                    </div>
+
+                    <label>Status: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Active</option>
+                          <option value="rectangle">Passive</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  
+      
+                    <label>Role: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Admin</option>
+                          <option value="rectangle">Member</option>
+                          <option value="rectangle">Assist admin</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+                  </div>
+                </div>
+                  
+                </form>
+              </div> -->
+            <!-- </div> -->
+          <!-- </div>
+        </div> -->
         <!-- Table head options start -->
-<div class="row" id="table-head">
+<div class="row mt-2" id="table-head">
   <div class="col-12">
     <div class="card">
-      <div class="card-header">
-        <h4 class="card-title">User Manage</h4>
-      </div>
+      <!-- <div class="card-header">
+        <h4 class="card-title">User Management</h4>
+      </div> -->
     
       
       

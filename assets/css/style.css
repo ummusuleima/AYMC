@@ -15,3 +15,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.navigation .active a{
+ background:black !important;
+}
+.navigation.nav-item a:hover{
+  color:white !important;
+  background:black !important;
+  box-shadow:000 .3rem rgba(136,126,242,.5);
+}

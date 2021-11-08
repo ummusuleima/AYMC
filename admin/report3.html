@@ -123,7 +123,7 @@
           </li>
           <li class="active nav-item"><a class="d-flex align-items-center" href="report.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Reports</span></a>
             <ul>
-              <li><a class="d-flex align-items-center" href="report1.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Report 1</span></a>
+              <li><a class="d-flex align-items-center" href="report1.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Total contribution</span></a>
               </li>
               <li><a class="d-flex align-items-center" href="report2.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Total Member Registered</span></a>
               </li>
@@ -144,174 +144,106 @@
         <div class="content-header row">
         </div>
         <!-- Table head options start -->
-<div class="row" id="table-head">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-header">
-        <h4 class="card-title">Total contribution per year</h4>
-      </div>
-      
-      <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th>Member-name</th>
-              <th>contribution/month</th>
-              <th>Depts</th>
-              <th>Paid</th>
-              <th>Total</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">Kasim Hussein</span>
-              </td>
-              <td>1000</td>
-              <td>3000</td>
-              <td>9000</td>
-              <td>12000</td>
-            </tr>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">Ahmed Yahya</span>
-              </td>
-              <td>1000</td>
-              <td>7000</td>
-              <td>5000</td>
-              <td>12000</td>
-            </tr>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">Aklan Mustapha</span>
-              </td>
-              <td>1000</td>
-              <td>9000</td>
-              <td>3000</td>
-              <td>12000</td>
-            </tr>
-            <tr>
-              
-              <td>
-                
-                <span class="font-weight-bold">abdurahman abubakar</span>
-              </td>
-              <td>1000</td>
-              <td>6000</td>
-              <td>6000</td>
-              <td>12000</td>
-            </tr>
-            <td>
-                
-              <span class="font-weight-bold">Mahmud Muhammad</span>
-            </td>
-            <td>1000</td>
-            <td>2000</td>
-            <td>10000</td>
-            <td>12000</td>
-          </tbody>
-        </table>
-      </div>
-      
-      
-    </div>
-  </div>
-</div>
+
   
 <!-- Table head options end -->
-        <div class="content-body">
-          <!-- Sales Line Chart Card -->
-        <div class="row-8">
-          <div class="card">
-            <div class="card-header align-items-start">
-              <div>
-                <h4 class="card-title mb-25">Expenses</h4>
-                <p class="card-text mb-0">2020 Total expenses: 12.84k</p>
+<div class="text-right">
+<div class="btn-group mr-2">
+    <button
+      type="button"
+      class="btn btn-dark me-1 w-sm-100"
+      data-toggle="dropdown"
+      aria-haspopup="true"
+      aria-expanded="false">
+      <i data-feather='arrow-up'></i>
+      Export
+    </button>
+    <div class="dropdown-menu dropdown-menu-right">
+      <a class="dropdown-item" href="javascript:void(0);">csv</a>
+      <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+      <a class="dropdown-item" href="javascript:void(0);">excel</a>
+    </div>
+  </div>
+  </div>
+        <div class="content-body mt-2">
+      <div class="table-responsive">
+        <div class="row" id="table-head">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Total Expenses Per Year</h4>
+                  </div>
+                
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>Exp-type</th>
+                        <th>Date issued</th>
+                        <th>issued to</th>
+                        <th>Amount</th>
+                        <th>xxx</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          
+                          <span class="font-weight-bold">Electricity bills</span>
+                        </td>
+                        <td>19/01/2021</td>
+                        <td>Mosques</td>
+                        <td>100,000</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                          <span class="font-weight-bold">Security system</span>
+                        </td>
+                        <td>10/02/2021</td>
+                        <td>school A</td>
+                        <td>250,000</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          
+                          <span class="font-weight-bold">Water bills</span>
+                        </td>
+                        <td>14/03/2021</td>
+                        <td>Security guide</td>
+                        <td>320,0000</td>
+                        <td>xxx</td>
+                      </tr>
+                      <tr>
+                        
+                        <td>
+                          
+                          <span class="font-weight-bold">Maintanance & Repair</span>
+                        </td>
+                        <td>12/4/2021</td>
+                        <td>School B</td>
+                        <td>450,0000</td>
+                        <td>xxx</td>
+                      </tr>
+                      <td>
+                          
+                        <span class="font-weight-bold">Maintanance & Repair</span>
+                      </td>
+                      <td>12/4/2021</td>
+                      <td>School B</td>
+                      <td>450,0000</td>
+                      <td>xxx</td>
+                    </tbody>
+                  </table>
+                </div>
+                
+                
               </div>
-              <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
-            </div>
-            <div class="card-body pb-0">
-              <div id="sales-line-chart"></div>
             </div>
           </div>
-        </div>
-        <!--/ Sales Line Chart Card -->
-        <!-- Table head options start -->
-
-        <div class="row-4">
-         <div class="card">
-          <div class="card-header">
-        <h4 class="card-title">Total member registered</h4>
-      </div>
-      
-      <div class="table-responsive">
-        <table class="table">
-          <thead class="thead-dark">
-            <tr>
-              <th>Member ID</th>
-              <th>Member Name</th>
-              <th>Email</th>
-              <th>Phone Number</th>
-              <th>Role</th>
-              
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">011</span>
-              </td>
-              <td>Ashraf kessy</td>
-              <td>ash@gmail.com</td>
-              <td>0775634523</td>
-              <td>xxx</td>
-            </tr>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">012</span>
-              </td>
-              <td>Baraka Juma</td>
-              <td>baraka@gmail.com</td>
-              <td>0776543256</td>
-              <td>xxx</td>
-            </tr>
-            <tr>
-              <td>
-                
-                <span class="font-weight-bold">013</span>
-              </td>
-              <td>Walid Khalid</td>
-              <td>walid@gmail.com</td>
-              <td>0675432546</td>
-              <td>xxx</td>
-            </tr>
-            <tr>
-              
-              <td>
-                
-                <span class="font-weight-bold">014</span>
-              </td>
-              <td>Shaban abraka</td>
-              <td>shaban@gmail.com</td>
-              <td>0655432343</td>
-              <td>xxx</td>
-            </tr>
-            <td>
-                
-              <span class="font-weight-bold">015</span>
-            </td>
-            <td>swaum abdallah</td>
-            <td>saum@gmail.com</td>
-            <td>450,0000</td>
-            <td>xxx</td>
-          </tbody>
-        </table>
       </div>
       
       
