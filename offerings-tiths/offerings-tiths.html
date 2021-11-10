@@ -114,24 +114,23 @@
           
             <li class=" nav-item"><a class="d-flex align-items-center" href="offer_index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
             </li>
-            
-            <li class="active nav-item"><a class="d-flex align-items-center" href="masjid_management.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Masjid Management</span></a>
-            </li>
-            <li class=" nav-item"><a class="d-flex align-items-center" href="offerings-tiths.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Offerings & Tiths</span></a>
+
+            <li class=" nav-item"><a class="d-flex align-items-center" href="masjid_management.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Masjid Management</span></a>
+            </li>            <li class="active nav-item"><a class="d-flex align-items-center" href="offerings-tiths.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Offerings & Tiths</span></a>
             </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="offer_expenses.html"><i data-feather='trending-up'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenses</span></a>
             </li>
             <li class="  nav-item"><a class="d-flex align-items-center" href="offer_reports.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="Report">Reports</span></a>
-              <ul>
-                <li><a class="d-flex align-items-center" href="offering-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Total offering per Month</span></a>
-                </li>
-                <li><a class="d-flex align-items-center" href="offering-rate.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Higher and Low offerings per Month</span></a>
-                </li>
-                <li><a class="d-flex align-items-center" href="tiths-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total tiths per Month</span></a>
-                </li>
-                <li><a class="d-flex align-items-center" href="expenses-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total expenses per Month</span></a>
-                </li>
-              </ul>
+                <ul>
+                    <li><a class="d-flex align-items-center" href="offering-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Total offering per Month</span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="offering-rate.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Higher and Low offerings per Month</span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="tiths-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total tiths per Month</span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="expenses-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total expenses per Month</span></a>
+                    </li>
+                  </ul>
             </li>
           </ul>
       </div>
@@ -149,7 +148,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h2>Masjid Management</h2>
+                <h2>Offerings & Tiths</h2>
                 
 
                 <div class="row">  
@@ -174,7 +173,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add masjid
+                       Add Offerings & Tiths
                    </button></div>
                  </div>  
            <div
@@ -188,7 +187,7 @@
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel33"> Add Masjid </h4>
+                <h4 class="modal-title" id="myModalLabel33"> Offerings & Tiths </h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -203,20 +202,21 @@
                   <div class="form-group">
                     <input type="text" placeholder="Masjid-name" class="form-control" />
                  </div>
-                  <label>Your Email: </label>
-                  <div class="form-group">
-                    <input type="text" placeholder="Your-Email" class="form-control" />
-                  </div>
-                </div>
-                <div class="modal-body">
-                  <label>Phone Number: </label>
-                  <div class="form-group">
-                    <input type="number" placeholder="Phone" class="form-control" />
-                  </div>
-                  <label>Masjid Adress: </label>
+                 <label>Masjid Adress: </label>
                   <div class="form-group">
                     <input type="text" placeholder="Adress" class="form-control" />
                   </div>
+                  <label>Offering Amount: </label>
+                  <div class="form-group">
+                    <input type="number" placeholder="Amount" class="form-control" />
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <label>Tiths Amount: </label>
+                  <div class="form-group">
+                    <input type="number" placeholder="amount" class="form-control" />
+                  </div>
+                  
                   <label>Status: </label>
                   
                   <div class="form-group">
@@ -255,9 +255,9 @@
             <tr>
                             <th>Date</th>
                             <th>Masjid Name</th>
-                            <th>Your Email</th>
-                            <th>Phone Number</th>
                             <th>Masjid location</th>
+                            <th>Offerings Amount</th>
+                            <th>Tiths Amount</th>
                             <th>Status</th>
                             <th>Action</th>
             </tr>
@@ -266,10 +266,9 @@
             <tr>
                 <td><span class="font-weight-bold">02/3/2021 </span></td>
                 <td>Masjid A</td>
-                <td><span class="font-weight-bold">abdul@gmail.com</span>
-                  
-                <td><span>0776543256</span></td>
                 <td>Tanga</td>
+                <td>4999</td>
+                <td>28000</td>
                 <td>active</td>
                 <td>
     
@@ -298,10 +297,9 @@
               <tr>
                 <td><span class="font-weight-bold">05/3/2021 </span></td>
                 <td>Masjid Y</td>
-                <td><span class="font-weight-bold">abdul@gmail.com </span>
-                  
-                <td><span>0765432675</span></td>
                 <td>Kilimanjaro</td>
+                <td>38000</td>
+                <td>29900</td>
                 <td>active</td>
                 <td>
     
@@ -330,10 +328,9 @@
               <tr>
                 <td><span class="font-weight-bold">10/3/2021 </span></td>
                 <td>Masjid R</td>
-                <td><span class="font-weight-bold">abdul@gmail.com</span>
-                  
-                <td><span>0765432451</span></td>
                 <td>Mtwara</td>
+                <td>60000</td>
+                <td>1000</td>
                 <td>active</td>
                 <td>
     
@@ -362,10 +359,9 @@
               <tr>
                 <td><span class="font-weight-bold">13/3/2021 </span></td>
                 <td>Masjid Q</td>
-                <td><span class="font-weight-bold">abdul@gmail.com </span>
-                  
-                <td><span>0654324512</span></td>
                 <td>Musoma</td>
+                <td>3000</td>
+                <td>1000</td>
                 <td>active</td>
                 <td>
     
@@ -394,10 +390,9 @@
               <tr>
                 <td><span class="font-weight-bold">12/3/2021 </span></td>
                 <td>Masjid W</td>
-                <td><span class="font-weight-bold">abdul@gmail.com </span>
-                  
-                <td><span>0654673456</span></td>
                 <td>Arusha</td>
+                <td>20000</td>
+                <td>1000</td>
                 <td>active</td>
                 <td>
     

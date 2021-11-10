@@ -83,13 +83,24 @@
               </div>
             </div>
           </div>
+          <label for="role select">Select Role</label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="">Select Role</option>
+                          <option value="admin">Admin</option>
+                          <option value="members">Members</option>
+                          <option value="offerings-tiths">Offerings-tiths</option>   
+                        </select>
+                      </div>  
+                    </div>
           <!-- <div class="form-group">
             <div class="custom-control custom-checkbox">
               <input class="custom-control-input" type="checkbox" id="remember-me" tabindex="3" />
               <label class="custom-control-label" for="remember-me"> Remember Me </label>
             </div>
           </div> -->
-          <a href="../admin/index.html" class="btn btn-dark btn-block" tabindex="4">Login</a>
+          <a href="../admin/index.html" class="btn btn-dark btn-block disabled" tabindex="4" id="login">Login</a>
           
         </form>
 
@@ -128,6 +139,24 @@
           feather.replace({ width: 14, height: 14 });
         }
       })
+      $('select').on('change', function (e) {
+          var optionSelected = $("option:selected", this);
+          var valueSelected = this.value;
+
+          if (valueSelected == "admin") {
+            $("#login").attr("href", "../admin/index.html");
+            $("#login").removeClass("disabled");
+          } else if (valueSelected == "members"){
+            $("#login").attr("href", "../members/index.html");
+            $("#login").removeClass("disabled");
+          } else if(valueSelected == "offerings-tiths"){
+            $("#login").attr("href", "../offerings-tiths/offer_index.html");
+            $("#login").removeClass("disabled");
+          }else if(valueSelected == ""){
+            $("#login").addClass("disabled");
+          }
+
+      });
     </script>
   </body>
   <!-- END: Body-->
