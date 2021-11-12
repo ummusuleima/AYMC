@@ -221,45 +221,51 @@
           </div>
 
           <div class="row match-height">
-            <div class="col-lg-4 col-12">
-              <div class="row match-height">
-
-                <!-- Line Chart - Profit -->
-                <div class="col-lg-12 col-md-6 col-12">
-                  <div class="card card-tiny-line-stats">
-                    <div class="card-body pb-50">
-                      <h6>Profit</h6>
-                      <h2 class="font-weight-bolder mb-1">6,24k</h2>
-                      <div id="statistics-profit-chart"></div>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Line Chart - Profit -->
-
-                <!-- Earnings Card -->
-                <div class="col-lg-12 col-md-6 col-12">
-                  <div class="card earnings-card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-6">
-                          <h4 class="card-title mb-1">Earnings</h4>
-                          <div class="font-small-2">This Month</div>
-                          <h5 class="mb-1">4055.56</h5>
-                          <p class="card-text text-muted font-small-2">
-                            <span class="font-weight-bolder">68.2%</span><span> more earnings than last month.</span>
-                          </p>
-                        </div>
-                        <div class="col-6">
-                          <div id="earnings-chart"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Earnings Card -->
-              </div>
+            <!-- Donut Chart Starts -->
+    <div class="col-lg-4 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Average Offerings & Tiths</h4>
+        </div>
+        <div class="card-body">
+          <canvas class="doughnut-chart-ex chartjs" data-height="275"></canvas>
+          <div class="d-flex justify-content-between mt-3 mb-1">
+            <div class="d-flex align-items-center">
+              <i data-feather="monitor" class="font-medium-2 text-primary"></i>
+              <span class="font-weight-bold ml-75 mr-25">Offerings</span>
+              <span>- 80%</span>
             </div>
-
+            <!-- <div>
+              <span>2%</span>
+              <i data-feather="arrow-up" class="text-success"></i>
+            </div> -->
+          </div>
+          <div class="d-flex justify-content-between mb-1">
+            <div class="d-flex align-items-center">
+              <i data-feather="tablet" class="font-medium-2 text-black"></i>
+              <span class="font-weight-bold ml-75 mr-25">Tiths</span>
+              <span>- 20%</span>
+            </div>
+            <!-- <div>
+              <span>8%</span>
+              <i data-feather="arrow-up" class="text-success"></i>
+            </div> -->
+          </div>
+          <!-- <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+              <i data-feather="tablet" class="font-medium-2 text-success"></i>
+              <span class="font-weight-bold ml-75 mr-25">Tablet</span>
+              <span>- 10%</span>
+            </div>
+            <div>
+              <span>-5%</span>
+              <i data-feather="arrow-down" class="text-danger"></i>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Donut Chart Starts -->
             <!-- Revenue Report Card -->
             <div class="col-lg-8 col-12">
               <div class="card card-revenue-budget">
@@ -329,22 +335,7 @@
           </div>
           
         </section>
-        <!-- Sales Line Chart Card -->
-        <!-- <div class="row-8">
-          <div class="card">
-            <div class="card-header align-items-start">
-              <div>
-                <h4 class="card-title mb-25">Expenses</h4>
-                <p class="card-text mb-0">2020 Total expenses: 12.84k</p>
-              </div>
-              <i data-feather="settings" class="font-medium-3 text-muted cursor-pointer"></i>
-            </div>
-            <div class="card-body pb-0">
-              <div id="sales-line-chart"></div>
-            </div>
-          </div>
-        </div> -->
-        <!--/ Sales Line Chart Card -->
+        
         <!-- Dashboard Ecommerce ends -->
 
         </div>
@@ -380,9 +371,12 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
+    <script src="../assets/vendors/js/charts/chart.min.js"></script>
     <script src="../assets/js/scripts/pages/dashboard-ecommerce.min.js"></script>
     <!-- <script src="../assets/js/scripts/cards/card-analytics.min.js"></script> -->
-   
+    <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../assets/js/scripts/charts/chart-chartjs.min.js"></script>
     <!-- END: Page JS-->
 
     <!-- BEGIN: Page JS-->

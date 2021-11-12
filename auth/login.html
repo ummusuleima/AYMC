@@ -90,7 +90,8 @@
                           <option value="">Select Role</option>
                           <option value="admin">Admin</option>
                           <option value="members">Members</option>
-                          <option value="offerings-tiths">Offerings-tiths</option>   
+                          <option value="offerings-tiths">Offerings-tiths</option>
+                          <option value="schools-finances">Schools-finances</option>    
                         </select>
                       </div>  
                     </div>
@@ -151,6 +152,9 @@
             $("#login").removeClass("disabled");
           } else if(valueSelected == "offerings-tiths"){
             $("#login").attr("href", "../offerings-tiths/offer_index.html");
+            $("#login").removeClass("disabled");
+          } else if(valueSelected == "schools-finances"){
+            $("#login").attr("href", "../schools-finances/index.html");
             $("#login").removeClass("disabled");
           }else if(valueSelected == ""){
             $("#login").addClass("disabled");
