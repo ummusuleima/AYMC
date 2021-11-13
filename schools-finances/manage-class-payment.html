@@ -107,31 +107,34 @@
           
           <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
           </li>
-          <li class="  active nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">School Management</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">School Management</span></a>
             <ul>
-                <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">School Registration</span></a>
+                <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">School Registration</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Fee Type</span></a>
+                <li><a class="d-flex align-items-center" href="manage-fee management.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Fee Management</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-payment-group.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Student Payment Group</span></a>
+                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Fee Type</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Class Payments</span></a>
+                
+                <li class="active"><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Class Payments</span></a>
                 </li>
               </ul>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="fee-transaction.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Fee Transaction</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="user-management.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html"><i data-feather='trending-up'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenditures</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="fee-transaction.html"><i data-feather='dollar-sign'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Fee Transaction</span></a>
+          </li>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html"><i data-feather='trending-down'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenditures</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Reports</span></a>
             <ul>
-              <li><a class="d-flex align-items-center" href="rep-income-statement.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Income Statements</span></a>
+              <li><a class="d-flex align-items-center" href="rep-income-statement.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">Income Statements</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="rep-student-fee-pay.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Full Paid Students Fees</span></a>
+              <li><a class="d-flex align-items-center" href="rep-student-fee-pay.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Full Paid Students Fees</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="rep-fee-per-time.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Amount of Fee Paid Per Time</span></a>
+              <li><a class="d-flex align-items-center" href="rep-fee-per-time.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Amount of Fee Paid Per Time</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="rep-high-low-fee-collection.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Schools with High/Low Fee Collection</span></a>
+              <li><a class="d-flex align-items-center" href="rep-high-low-fee-collection.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Schools with High/Low Fee Collection</span></a>
               </li>
             </ul>
           </li>
@@ -148,107 +151,110 @@
         <div class="content-header row">
         </div>
         <div class="row" id="table-head">
-          <div class="col-12">
-            <div class="card">
-              <div class="card-header">
-                <h2>Class Payment</h2>
-                
-
-                <div class="row">  
-                  <div class="btn-group mr-2">
-                    <button
-                      type="button"
-                      class="btn btn-dark me-1 w-sm-100"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false">
-                      <i data-feather='download'></i>
-                      Import
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h2> Class Payment</h2>
+                  
+  
+                  <div class="row">  
+                    <div class="btn-group mr-2">
+                      <button
+                        type="button"
+                        class="btn btn-dark me-1 w-sm-100"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <i data-feather='upload'></i>
+                        Import
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="javascript:void(0);">csv</a>
+                        <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Excel</a>
+                      </div>
+                    </div>
+                      
+                     <div class="form-modal-ex">
+                    <div class="text-right">
+                     <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
+                      <i data-feather='user-plus'></i>
+                         Add Class Payment
+                     </button></div>
+                     <!-- Modal -->
+             <div
+              class="modal fade text-right"
+              id="inlineForm"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="myModalLabel33"
+              aria-hidden="true"
+            > 
+             <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel33">Add Class Payment</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
                     </button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="javascript:void(0);">csv</a>
-                      <a class="dropdown-item" href="javascript:void(0);">pdf</a>
-                      <a class="dropdown-item" href="javascript:void(0);">Excel</a>
+                  </div>
+                  <form action="#">
+                    <div class="modal-body">
+                        <label>Class : </label>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <select class="select2 form-control" id="default-select">
+                            <option value="square">Class One</option>
+                            <option value="square">Class Two</option>
+                            <option value="rectangle">Class Three</option>
+                            <option value="square">Class Four</option>
+                            <option value="rectangle">Class Five</option>
+                            <option value="square">Class Six</option>
+                            <option value="rectangle">Class Seven</option>
+                          </select>
+                        </div>  
+                      </div>
+                      <label>Payment Group: </label>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <select class="select2 form-control" id="default-select">
+                            <option value="square">Full Time</option>
+                            <option value="square">Orphans</option>
+                            <option value="rectangle">Scholarship</option>
+                          </select>
+                        </div>  
+                      </div>
+                      <label>Fee Type: </label>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <select class="select2 form-control" id="default-select">
+                            <option value="square">Select Type</option>
+                            <option value="square">Form Fee</option>
+                            <option value="rectangle">School Fee</option>
+                            <option value="square">Examination Fee</option>
+                            <option value="rectangle">Tour Fee</option>
+                          </select>
+                        </div>  
+                      </div>
+                    </div>
+                    <div class="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
                     </div>
                   </div>
                     
-                   
-                   <!-- Modal -->
-           <div
-            class="modal fade text-right"
-            id="inlineForm"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="myModalLabel33"
-            aria-hidden="true"
-          > 
-           <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add Class</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <form action="#">
-                  <div class="modal-body">
-                    <label>First Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
-                    </div>
-
-                    <label>Last Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
+                  </form>
+                </div> 
+               </div> 
+                     </div>
                     </div>
                   </div>
-                  <div class="modal-body">
-                    <label>Email: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
-                    </div>
-
-                    <label>Status: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
-                      </div>  
-                    </div>
-                  
-      
-                    <label>Role: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Admin</option>
-                          <option value="rectangle">Member</option>
-                          <option value="rectangle">Assist admin</option>  
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
                   </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
-                  </div>
-                </div>
-                  
-                </form>
-              </div> 
-             </div> 
-                   
-                  </div>
-                </div>
-                </div>
-          
+            
+             </div>
            </div>
-         </div>
 
 </div>
 
@@ -267,21 +273,21 @@
         <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th>No#</th>
-              <th>Class Name</th>
+              <th>Class</th>
+              <th>Payment Group</th>
+              <th>Fee Type</th>
               <th>Amount</th>
-              <th></th>
               <th>Action</th>
               
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="font-weight-bold">01 </span></td>
-              <td>Class One</td>
-              <td>100,000</td>
+              <td><span class="font-weight-bold">Class One </span></td>
+              <td>Orphans</td>
+              <td>Form Fee</td>
                 
-            <td><span class="badge badge-pill badge-light-primary mr-1"></span></td>
+            <td>1,000,000</td>
   
               <td>
                 
@@ -309,13 +315,13 @@
             <tr>
               <td>
                 
-                <span class="font-weight-bold">002</span>
+                <span class="font-weight-bold">Class seven</span>
               </td>
-              <td>Class Two</td>
-              <td>200,000</td>
+              <td>Scholarship</td>
+              <td>Examination Fee</td>
               
               
-              <td><span class="badge badge-pill badge-light-success mr-1"></span></td>
+              <td>700,000</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -338,12 +344,12 @@
             <tr>
               <td>
                 
-                <span class="font-weight-bold">003</span>
+                <span class="font-weight-bold">Class  Three</span>
               </td>
-              <td>Class Three</td>
+              <td>Full Time</td>
+              <td>Scholarship</td>
+              
               <td>300,000</td>
-              
-              <td><span class="badge badge-pill badge-light-info mr-1"></span></td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -363,102 +369,10 @@
               </td>
               
             </tr>
-            <tr>
-              <td>004</td>
-              <td>Class Four</td>
-              <td>400,000</td>
+            
+            
               
-              <td><span class="badge badge-pill badge-light-warning mr-1"></span></td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                  </div>
-                </div>
               
-            </tr>
-            <tr>
-                <td>004</td>
-                <td>Class Five</td>
-                <td>500,000</td>
-                
-                <td><span class="badge badge-pill badge-light-warning mr-1"></span></td>
-                <td>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                      <i data-feather="more-vertical"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="edit-2" class="mr-50"></i>
-                        <span>Edit</span>
-                      </a>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="trash" class="mr-50"></i>
-                        <span>Delete</span>
-                      </a>
-                    </div>
-                  </div>
-                
-              </tr>
-              <tr>
-                <td>006</td>
-                <td>Class Six</td>
-                <td>600,000</td>
-                
-                <td><span class="badge badge-pill badge-light-warning mr-1"></span></td>
-                <td>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                      <i data-feather="more-vertical"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="edit-2" class="mr-50"></i>
-                        <span>Edit</span>
-                      </a>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="trash" class="mr-50"></i>
-                        <span>Delete</span>
-                      </a>
-                    </div>
-                  </div>
-                
-              </tr>
-              <tr>
-                <td>007</td>
-                <td>Class Seven</td>
-                <td>700,000</td>
-                
-                <td><span class="badge badge-pill badge-light-warning mr-1"></span></td>
-                <td>
-                  <div class="dropdown">
-                    <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                      <i data-feather="more-vertical"></i>
-                    </button>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="edit-2" class="mr-50"></i>
-                        <span>Edit</span>
-                      </a>
-                      <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="trash" class="mr-50"></i>
-                        <span>Delete</span>
-                      </a>
-                    </div>
-                  </div>
-                
-              </tr>
           </tbody>
         </table>
         
