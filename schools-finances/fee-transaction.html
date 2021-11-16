@@ -71,7 +71,7 @@
               <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">Aklan Mustapha</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
               <a class="dropdown-item" href=""><i class="mr-50" data-feather="user"></i> Profile</a>
-              <a class="dropdown-item" href=""><i class="mr-50" data-feather="settings"></i> Settings</a>
+
               <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
             </div>
           </li>
@@ -102,26 +102,30 @@
         </ul>
       </div>
       <div class="shadow-bottom"></div>
+      
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
           
-          <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
-          </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">School Management</span></a>
-            <ul>
-                <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">School Registration</span></a>
-                </li>
-                <li><a class="d-flex align-items-center" href="manage-fee management.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Fee Management</span></a>
-                </li>
-                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Fee Type</span></a>
-                </li>
-                
-                <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Class Payments</span></a>
-                </li>
-              </ul>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="dashboard">Dashboard</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="user-management.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="school management">School Management</span></a>
+            <ul>
+                <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="school registration">School Registration</span></a>
+                </li>
+                <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="class payment">Class Payments</span></a>
+                </li>
+                <li><a class="d-flex align-items-center" href="manage-group-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="student payment group">Group Type</span></a>
+                </li>
+                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="fee type">Fee Type</span></a>
+                </li>
+                
+
+                
+              </ul>
+          </li>
+          
           <li class=" active nav-item"><a class="d-flex align-items-center" href="fee-transaction.html"><i data-feather='dollar-sign'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Fee Transaction</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html"><i data-feather='trending-down'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenditures</span></a>
@@ -154,11 +158,11 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h2>Student Fee</h2>
+                <h2>Fee Transaction Management</h2>
                 
 
                 <div class="row">  
-                  <div class=" mr-2">
+                  <div class="btn-group mr-2">
                     <button
                       type="button"
                       class="btn btn-dark me-1 w-sm-100"
@@ -179,7 +183,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add Student Fee
+                       Add Fee Transaction
                    </button></div>
                    <!-- Modal -->
            <div
@@ -193,52 +197,76 @@
            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add Student Fee</h4>
+                  <h4 class="modal-title" id="myModalLabel33">Add Fee Transaction</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <form action="#">
                   <div class="modal-body">
-                    <label>Student ID: </label>
+                    <label>First Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="student ID" class="form-control" />
+                      <input type="text" placeholder="First-name" class="form-control" />
                     </div>
-                </div>
-                <div class="modal-body">
-                    <label>Student Name: </label>
+
+                    <label>Last Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Student Name" class="form-control" />
+                      <input type="text" placeholder="Last-name" class="form-control" />
                     </div>
-                </div>
-                <div class="modal-body"> 
-                  <label>Student Class: </label>
+                    <label>Class : </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Last-name" class="form-control" />
+                    </div>
+                    <label>Student Type: </label>
                     <div class="form-group">
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
-                            <option value="rectangle">Choose Class</option>
-                          <option value="square">Class One</option>
-                          <option value="rectangle">Class Two</option>
-                          <option value="square">Class Three</option>
-                          <option value="rectangle">Class Four</option>
-                          <option value="square">Class Five</option>
-                          <option value="rectangle">Class Six</option>
-                          <option value="rectangle">Class Seven</option>      
+                          <option value="square">Full Time</option>
+                          <option value="rectangle"> Scholarship</option>
+                          <option value="rectangle">Orphan</option>    
                         </select>
                       </div>  
                     </div>
-                </div>
-                  <div class="modal-body">
-                    <label>Amount Paid: </label>
-                    <div class="form-group">
-                      <input type="Number" placeholder="Amount Paid" class="form-control" />
-                    </div>
+                     <label>Fee Type: </label>
+                      <div class="form-group">
+                        <div class="form-group">
+                          <select class="select2 form-control" id="fee">
+                            <option value="0">Select Type</option>
+                            <option value="1">School Fee</option>
+                            <option value="2">Other Fee</option>
+                          </select>
+                        </div>  
+                      </div>
+                      <label id="otherfeetlt" style="display: none;">Other Fee Type: </label>
+                      <div class="form-group" id="otherfeemain" style="display: none;">
+                        <div class="form-group">
+                          <select class="select2 form-control" id="default-select">
+                            <option value="square">Select other Type</option>
+                            <option value="square">Examination Fee</option>
+                            <option value="rectangle">Tour Fee</option>
+                            <option value="rectangle">Registration Fee</option>
+                          </select>
+                        </div>  
+                      </div>
                   </div>
                   <div class="modal-body">
-                    <label>Amount Not Paid: </label>
+                    <!-- <label>Email: </label>
                     <div class="form-group">
-                      <input type="Number" placeholder="Amount Not Paid" class="form-control" />
-                    </div>
+                      <input type="text" placeholder="Email Address" class="form-control" />
+                    </div> -->
+
+                    <!-- <label>Status: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Active</option>
+                          <option value="rectangle">Passive</option>  
+                        </select>
+                      </div>  
+                    </div> -->
+                  
+      
+                    
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
@@ -258,7 +286,101 @@
          </div>
 
 </div>
-        
+        <!-- <div class="form-modal-ex"> -->
+          <!-- Button trigger modal -->
+          <!-- <div class="text-right">
+            <div class="btn-group mr-2">
+            <button
+              type="button"
+              class="btn btn-dark me-1 w-sm-100"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false">
+              Import
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="javascript:void(0);">csv</a>
+              <a class="dropdown-item" href="javascript:void(0);">pdf</a>
+              <a class="dropdown-item" href="javascript:void(0);">excel</a>
+            </div>
+          </div> -->
+          <!-- <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
+           Add user
+          </button></div> -->
+          <!-- Modal -->
+          <!-- <div
+            class="modal fade text-right"
+            id="inlineForm"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel33"
+            aria-hidden="true"
+          > -->
+            <!-- <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form action="#">
+                  <div class="modal-body">
+                    <label>First Name: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="First-name" class="form-control" />
+                    </div>
+
+                    <label>Last Name: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Last-name" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <label>Email: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Email Address" class="form-control" />
+                    </div>
+
+                    <label>Status: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Active</option>
+                          <option value="rectangle">Passive</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  
+      
+                    <label>Role: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="square">Admin</option>
+                          <option value="rectangle">Member</option>
+                          <option value="rectangle">Assist admin</option>  
+                        </select>
+                      </div>
+                      
+                      
+                      
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+                  </div>
+                </div>
+                  
+                </form>
+              </div> -->
+            <!-- </div> -->
+          <!-- </div>
+        </div> -->
         <!-- Table head options start -->
 <div class="row mt-2" id="table-head">
   <div class="col-12">
@@ -274,21 +396,30 @@
         <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th>Student ID</th>
-              <th>Student Name</th>
-              <th>Student class</th>
-              <th>Amount paid</th>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>Class</th>
+              <th>Student Type</th>
+              <th>Fee Type</th>
+              <th>Fee Structure</th>
+              <th>Amount Paid</th>
+              <th>Amount remaind</th>
               <th>Action</th>
+           
+              
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="font-weight-bold">001</span></td>
-              <td>Amina Baraka</td>
-              <td><span class="font-weight-bold">Class Two</span>
+              <td><span class="font-weight-bold">Ilham</span></td>
+              <td>Khatib</td>
+              <td> class seven</td>
                 
-            <td>200,000</td>
-            
+            <td>Orphan</td>
+            <td>School Fee</td>
+            <td>10% of school Fee</td>
+            <td>50,000</td>
+            <td>20,000</td>
 
   
               <td>
@@ -306,10 +437,6 @@
                       <i data-feather="trash" class="mr-50"></i>
                       <span>Delete</span>
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="plus" class="mr-50"></i>
-                        <span>Receipts</span>
-                      </a>
                   </div>
                   
                 </div>
@@ -319,11 +446,54 @@
               
             </tr>
             <tr>
-              <td>002</td>
-              <td>Ahmed Khamis</td>
-              <td>Class Four</td>
+              <td>
+                
+                <span class="font-weight-bold">Baraka</span>
+              </td>
+              <td>Shaban</td>
+              <td>Class six</td>
               
-              <td>400,000</td>
+              <!--
+              <td>
+                
+                <div class="avatar-group">
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Lilian Nenez"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                </div>
+              </td>-->
+              <td>Scholarship</td>
+              <td>Examination Fee</td>
+              <td>80% 0f Exam Fee</td>
+              <td>10,000</td>
+              <td>6,000</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -338,23 +508,58 @@
                       <i data-feather="trash" class="mr-50"></i>
                       <span>Delete</span>
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="plus" class="mr-50"></i>
-                        <span>Receipts</span>
-                      </a>
                   </div>
                 </div>
               </td>
+            
             </tr>
             <tr>
               <td>
                 
-                <span class="font-weight-bold">005 </span>
+                <span class="font-weight-bold">Abdurahman </span>
               </td>
-              <td>Yahya Ibrahim</td>
-              <td>Class five</td>
-
-              <td>500,000</span></td>
+              <td>Yahya</td>
+              <td>Class Five</td>
+              <!--
+              <td>
+                <div class="avatar-group">
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Lilian Nenez"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                </div>
+              </td> -->
+              <td>Full time</td>
+              <td>Registration Fee</td>
+              <td>100% of Reg Fee</td>
+              <td>50,000</td>
+              <td>50,000</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -369,19 +574,54 @@
                       <i data-feather="trash" class="mr-50"></i>
                       <span>Delete</span>
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="plus" class="mr-50"></i>
-                        <span>Receipts</span>
-                      </a>
                   </div>
                 </div>
               </td>
+             
             </tr>
             <tr>
-              <td>044</td>
-              <td>Khadija Abdillah</td>
-              <td>Class Seven</td>
-              <td>700,000</td>
+              <td>Muhsin</td>
+              <td>abdumalik</td>
+              <td>class Two</td>
+              <!--<td>
+                <div class="avatar-group">
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Lilian Nenez"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                  <div
+                    data-toggle="tooltip"
+                    data-popup="tooltip-custom"
+                    data-placement="top"
+                    title=""
+                    class="avatar pull-up my-0"
+                    data-original-title="Alberto Glotzbach"
+                  >
+                    
+                  </div>
+                </div>
+              </td> -->
+              <td>Scholarship</td>
+              <td>School Fee</td>
+              <td>80% of School Fee</td>
+              <td>100,000</td>
+              <td>60,000</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -396,12 +636,9 @@
                       <i data-feather="trash" class="mr-50"></i>
                       <span>Delete</span>
                     </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                        <i data-feather="plus" class="mr-50"></i>
-                        <span>Receipts</span>
-                      </a>
                   </div>
                 </div>
+            
             </tr>
           </tbody>
         </table>
@@ -462,6 +699,16 @@
     <!-- END: Page JS-->
 
     <script>
+      document.getElementById("fee");
+      $('select').on('change', function() {
+        if(this.value==2){
+          $('#otherfeetlt').css("display", "block");
+          $('#otherfeemain').css("display", "block");
+        }else if (this.value==1){
+          $('#otherfeetlt').css("display", "none");
+          $('#otherfeemain').css("display", "none");
+        }
+      });
       $(window).on('load',  function(){
         if (feather) {
           feather.replace({ width: 14, height: 14 });

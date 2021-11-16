@@ -76,8 +76,8 @@
               <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">Aklan Mustapha</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
               <a class="dropdown-item" href="profile.html"><i class="mr-50" data-feather="user"></i> Profile</a>
-              <a class="dropdown-item" href="page-account-settings.html"><i class="mr-50" data-feather="settings"></i> Settings</a>
-              <a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i> Logout</a>
+     
+              <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
             </div>
           </li>
         </ul>
@@ -118,9 +118,9 @@
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="Report.html"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="expenses">Reports</span></a>
             <ul>
-              <li><a class="d-flex align-items-center" href="member-report1.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Expenses</span></a>
+              <li><a class="d-flex align-items-center" href="member-report1.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">Expenses</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="member-report2.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Revenue</span></a>
+              <li><a class="d-flex align-items-center" href="member-report2.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Revenue</span></a>
               </li>
              </ul>
           </li>
@@ -178,9 +178,10 @@
                         <th>No#</th>
                         <th>Month</th>
                         <th>Amount to be paid</th>
-                        <th>status</th>
-                        <th>ABC</th>
                         <th>Paid date</th>
+                        <th>status</th>
+                        <th>Action</th>
+                        
   
                       </tr>
                     </thead>
@@ -189,11 +190,31 @@
                         <td><span class="font-weight-bold">01 </span></td>
                         <td>Jan</td>
                         <td><span class="font-weight-bold">1000 </span>
+                          <td>01/Jan</td>
                           
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
-                        <td>xxx</td>
+                        <td>
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
+                        </td>
           
-                        <td>01/Jan</td>
+                       
                         
                       </tr>
   
@@ -216,9 +237,29 @@
                              </div>
                           
                         </td>
-                        <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
-                        <td>xxx</td>
                         <td>03/Feb</td>
+                        <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
+                        <td>
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
+                        </td>
+                       
                       </tr>
                       <tr>
                         <td>
@@ -226,22 +267,57 @@
                         </td>
                         <td>Mar</td>
                         <td>1000</td>
+                        <td>12/Mar</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>12/Mar</td>
+                        
                       </tr>
                       <tr>
                         <td>04</td>
                         <td>April</td>
                         <td>1000</td>
-                        
+                        <td>20/Apr</td>
                         <td><span class="badge badge-pill badge-light-warning mr-1">Not paid</span></td>
                         <td>
-                          xxx
-                        </td><td>20/Apr</td>
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
+                        </td>
                       </tr>
                       <tr>
                         <td>
@@ -249,12 +325,30 @@
                         </td>
                         <td>May</td>
                         <td>1000</td>
+                        <td>29/May</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>29/May</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -262,12 +356,30 @@
                         </td>
                         <td>June</td>
                         <td>1000</td>
+                        <td>22/Jun</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>22/Jun</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -275,12 +387,30 @@
                         </td>
                         <td>Jul</td>
                         <td>1000</td>
+                        <td>12/Jul</td>
                         
                         <td><span class="badge badge-pill badge-light-warning mr-1"> Not paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>12/Jul</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -288,12 +418,30 @@
                         </td>
                         <td>Aug</td>
                         <td>1000</td>
+                        <td>11/Aug</td>
                         
                         <td><span class="badge badge-pill badge-light-warning mr-1"> Not paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>11/Aug</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -301,12 +449,30 @@
                         </td>
                         <td>Sept</td>
                         <td>1000</td>
+                        <td>19/Sep</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>19/Sep</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -314,12 +480,30 @@
                         </td>
                         <td>Oct</td>
                         <td>1000</td>
+                        <td>30/Oct</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>30/Oct</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -327,12 +511,30 @@
                         </td>
                         <td>Nov</td>
                         <td>1000</td>
+                        <td>11/Nov</td>
                         
                         <td><span class="badge badge-pill badge-light-warning mr-1"> Not paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>11/Nov</td>
+                        
                       </tr>
                       <tr>
                         <td>
@@ -340,12 +542,30 @@
                         </td>
                         <td>Dec</td>
                         <td>1000</td>
+                        <td>12/Dec</td>
                         
                         <td><span class="badge badge-pill badge-light-success mr-1">Paid</span></td>
                         <td>
-                          xxx
+                
+                          <div class="dropdown">
+                            <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                              <i data-feather="more-vertical"></i>
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="edit-2" class="mr-50"></i>
+                                <span>Edit</span>
+                              </a>
+                              <a class="dropdown-item" href="javascript:void(0);">
+                                <i data-feather="trash" class="mr-50"></i>
+                                <span>Delete</span>
+                              </a>
+                            </div>
+                            
+                          </div>
+                          
                         </td>
-                        <td>12/Dec</td>
+                        
                       </tr>
                     </tbody>
                   </table>

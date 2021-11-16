@@ -71,7 +71,7 @@
               <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">Aklan Mustapha</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
               <a class="dropdown-item" href=""><i class="mr-50" data-feather="user"></i> Profile</a>
-              <a class="dropdown-item" href=""><i class="mr-50" data-feather="settings"></i> Settings</a>
+ 
               <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
             </div>
           </li>
@@ -115,11 +115,11 @@
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="report.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Reports</span></a>
             <ul>
-              <li><a class="d-flex align-items-center" href="report1.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report1">Total Contribution</span></a>
+              <li><a class="d-flex align-items-center" href="report1.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">Total Contribution</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="report2.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report2">Total Member Registered</span></a>
+              <li><a class="d-flex align-items-center" href="report2.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Total Member Registered</span></a>
               </li>
-              <li><a class="d-flex align-items-center" href="report3.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="report3">Total expenses</span></a>
+              <li><a class="d-flex align-items-center" href="report3.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Total expenses</span></a>
               </li>
             </ul>
           </li>
@@ -164,7 +164,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add user
+                       Add User
                    </button></div>
                    <!-- Modal -->
            <div
@@ -178,7 +178,7 @@
            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
+                  <h4 class="modal-title" id="myModalLabel33">Add User</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -196,7 +196,7 @@
                     </div>
                   </div>
                   <div class="modal-body">
-                    <label>Email: </label>
+                    <label>E-mail: </label>
                     <div class="form-group">
                       <input type="text" placeholder="Email Address" class="form-control" />
                     </div>
@@ -205,8 +205,9 @@
                     <div class="form-group">
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
+                          <option value="square">Choose Status</option>
                           <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
+                          <option value="rectangle">In active</option>  
                         </select>
                       </div>  
                     </div>
@@ -216,9 +217,10 @@
                     <div class="form-group">
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
+                          <option value="square">Choose Role</option>
                           <option value="square">Admin</option>
                           <option value="rectangle">Member</option>
-                          <option value="rectangle">Assist admin</option>  
+                          <option value="rectangle">Assist Admin</option>  
                         </select>
                       </div>
                       
@@ -228,12 +230,12 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                   </div>
                 </div>
                   
                 </form>
-              </div> -->
+              </div> 
              </div> 
                    </div>
                   </div>
@@ -358,17 +360,18 @@
               <th>Last name</th>
               <th>Email</th>
               <th>Status</th>
-              <th>Action</th>
               <th>Role</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="font-weight-bold">Peter </span></td>
-              <td>Chalamila</td>
-              <td><span class="font-weight-bold">pchalamila@gmail.com </span>
+              <td><span class="font-weight-bold">Baraka </span></td>
+              <td>Farouk</td>
+              <td><span class="font-weight-bold">bfarouk@gmail.com </span>
                 
-            <td><span class="badge badge-pill badge-light-primary mr-1">Active</span></td>
+            <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
+            <td>Member</td>
   
               <td>
                 
@@ -390,16 +393,16 @@
                 </div>
                 
               </td>
-              <td>Member</td>
+              
               
             </tr>
             <tr>
               <td>
                 
-                <span class="font-weight-bold">Michael</span>
+                <span class="font-weight-bold">Mikidad</span>
               </td>
-              <td>Ronald</td>
-              <td>Michael@gmail.com</td>
+              <td>Rommy</td>
+              <td>Miki@gmail.com</td>
               
               <!--
               <td>
@@ -437,7 +440,8 @@
                   </div>
                 </div>
               </td>-->
-              <td><span class="badge badge-pill badge-light-success mr-1">Completed</span></td>
+              <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
+              <td>Member</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -455,12 +459,12 @@
                   </div>
                 </div>
               </td>
-              <td>Member</td>
+            
             </tr>
             <tr>
               <td>
                 
-                <span class="font-weight-bold">abdurahman </span>
+                <span class="font-weight-bold">Abdurahman </span>
               </td>
               <td>Yahya</td>
               <td>adulyah@gmail.com</td>
@@ -499,7 +503,8 @@
                   </div>
                 </div>
               </td> -->
-              <td><span class="badge badge-pill badge-light-info mr-1">Scheduled</span></td>
+              <td><span class="badge badge-pill badge-light-danger mr-1">In Active</span></td>
+              <td>Member</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -517,11 +522,11 @@
                   </div>
                 </div>
               </td>
-              <td>Member</td>
+         
             </tr>
             <tr>
               <td>Muhsin</td>
-              <td>abdumalik</td>
+              <td>Abdumalik</td>
               <td>abduMuh@gmail.com</td>
               <!--<td>
                 <div class="avatar-group">
@@ -557,11 +562,13 @@
                   </div>
                 </div>
               </td> -->
-              <td><span class="badge badge-pill badge-light-warning mr-1">Pending</span></td>
+              <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
+            </td><td>Admin assist</td>
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
                     <i data-feather="more-vertical"></i>
+
                   </button>
                   <div class="dropdown-menu">
                     <a class="dropdown-item" href="javascript:void(0);">
@@ -574,7 +581,7 @@
                     </a>
                   </div>
                 </div>
-              </td><td>admin assist</td>
+              
             </tr>
           </tbody>
         </table>
