@@ -83,15 +83,16 @@
               </div>
             </div>
           </div>
-          <label for="role select">Select Role</label>
+          <label for="role select">Select Subsystem</label>
                     <div class="form-group">
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
-                          <option value="">Select Role</option>
+                          <option value="">Select Subsystem</option>
                           <option value="admin">Admin</option>
                           <option value="members">Members</option>
                           <option value="offerings-tiths">Offerings-tiths</option>
-                          <option value="schools-finances">Schools-finances</option>    
+                          <option value="schools-finances">Schools-finances</option>
+                          <option value="Central">Central</option>     
                         </select>
                       </div>  
                     </div>
@@ -155,6 +156,9 @@
             $("#login").removeClass("disabled");
           } else if(valueSelected == "schools-finances"){
             $("#login").attr("href", "../schools-finances/index.html");
+            $("#login").removeClass("disabled");
+          } else if(valueSelected == "Central"){
+            $("#login").attr("href", "../Central/index.html");
             $("#login").removeClass("disabled");
           }else if(valueSelected == ""){
             $("#login").addClass("disabled");
