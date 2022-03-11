@@ -99,9 +99,9 @@
           
           <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="dashboard">Dashboard</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="Student Registration.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Student Registration</span></a>
+          <li class="active nav-item"><a class="d-flex align-items-center" href="Student Registration.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Student Registration</span></a>
           </li>
-          <li class="active nav-item"><a class="d-flex align-items-center" href="user-management.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="user-management.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="school management">School Management</span></a>
             <ul>
@@ -151,7 +151,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h2>User Management</h2>
+                <h2>Student Registration</h2>
                 
 
                 <div class="row">  
@@ -176,7 +176,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add user
+                       Add student
                    </button></div>
                    <!-- Modal -->
            <div
@@ -190,13 +190,18 @@
            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
+                  <h4 class="modal-title" id="myModalLabel33">Add Student</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <form action="#">
                   <div class="modal-body">
+
+                    <label>Student Number: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Student number" class="form-control" />
+                    </div>
                     <label>First Name: </label>
                     <div class="form-group">
                       <input type="text" placeholder="First-name" class="form-control" />
@@ -206,41 +211,20 @@
                     <div class="form-group">
                       <input type="text" placeholder="Last-name" class="form-control" />
                     </div>
-                  </div>
-                  <div class="modal-body">
-                    <label>Email: </label>
+                    <label>Class: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Last-name" class="form-control" />
+                    </div>
+                    <label>student Type: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Last-name" class="form-control" />
+                    </div>
+                    <label>Age: </label>
                     <div class="form-group">
                       <input type="text" placeholder="Email Address" class="form-control" />
                     </div>
-
-                    <!-- <label>Status: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
-                      </div>  
-                    </div> -->
-                  
-      
-                    <label>Role: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Choose Role</option>
-                          <option value="square">Accountant</option>
-                          <option value="rectangle">Assist Accountant</option>
-                          <option value="square">Manager</option>
-                          <option value="square">Headmaster</option>
-
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
                   </div>
+
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
@@ -369,23 +353,24 @@
         <table class="table">
           <thead class="thead-dark">
             <tr>
+                <th>Student No#</th>
               <th>First name</th>
               <th>Last name</th>
-              <th>Email</th>
-              <!-- <th>Status</th> -->
-              <th>Role</th>
+              <th>Class</th>
+              
+              <th>Student Type</th>
+              <th>Age</th>
               <th>Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
+                <td>0112</td>
               <td><span class="font-weight-bold">Abubakar </span></td>
               <td>Sadik</td>
-              <td><span class="font-weight-bold">asadik@gmail.com </span></td>
-              <td>Accountant</td>
-                
-            <!-- <td><span class="badge badge-pill badge-light-primary mr-1">Active</span></td> -->
-  
+              <td><span class="font-weight-bold">Class 7 </span></td>
+              <td>Orphan</td>
+              <td>16yrs</td>
               <td>
                 
                 <div class="dropdown">
@@ -409,53 +394,16 @@
              
               
             </tr>
+
             <tr>
+                <td>0112</td>
+              <td><span class="font-weight-bold">Abubakar </span></td>
+              <td>Sadik</td>
+              <td><span class="font-weight-bold">Class 7 </span></td>
+              <td>Orphan</td>
+              <td>16yrs</td>
               <td>
                 
-                <span class="font-weight-bold">Malik</span>
-              </td>
-              <td>Ayoub</td>
-              <td>Malik@gmail.com</td>
-              <td>Accountant</td>
-              
-              <!--
-              <td>
-                
-                <div class="avatar-group">
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Lilian Nenez"
-                  >
-                    
-                  </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                </div>
-              </td>-->
-              <!-- <td><span class="badge badge-pill badge-light-success mr-1">Completed</span></td> -->
-              <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
                     <i data-feather="more-vertical"></i>
@@ -470,48 +418,23 @@
                       <span>Delete</span>
                     </a>
                   </div>
+                  
                 </div>
-              </td>
-              
-            </tr>
-            <tr>
-              <td>
                 
-                <span class="font-weight-bold">Abdurahman </span>
-              </td>
-              <td>Yahya</td>
-              <td>adulyah@gmail.com</td>
-              <td>Head Master</td>
-              
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                  </div>
-                </div>
               </td>
              
+              
             </tr>
+
             <tr>
+                <td>0112</td>
+              <td><span class="font-weight-bold">Abubakar </span></td>
+              <td>Sadik</td>
+              <td><span class="font-weight-bold">Class 7 </span></td>
+              <td>Orphan</td>
+              <td>16yrs</td>
               <td>
                 
-                <span class="font-weight-bold">Abdulkareem </span>
-              </td>
-              <td>Khatib</td>
-              <td>adulkhat@gmail.com</td>
-              <td>Manager</td>
-              
-              <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
                     <i data-feather="more-vertical"></i>
@@ -526,20 +449,23 @@
                       <span>Delete</span>
                     </a>
                   </div>
+                  
                 </div>
+                
               </td>
              
+              
             </tr>
+
             <tr>
+                <td>0112</td>
+              <td><span class="font-weight-bold">Abubakar </span></td>
+              <td>Sadik</td>
+              <td><span class="font-weight-bold">Class 7 </span></td>
+              <td>Orphan</td>
+              <td>16yrs</td>
               <td>
                 
-                <span class="font-weight-bold">Feysal  </span>
-              </td>
-              <td>Mahad</td>
-              <td>feymah@gmail.com</td>
-              <td>Headmaster</td>
-              
-              <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
                     <i data-feather="more-vertical"></i>
@@ -554,11 +480,14 @@
                       <span>Delete</span>
                     </a>
                   </div>
+                  
                 </div>
+                
               </td>
              
+              
+            </tr> 
             </tr>
-           
           </tbody>
         </table>
         
@@ -626,4 +555,3 @@
     </script>
   </body>
   <!-- END: Body-->
-
