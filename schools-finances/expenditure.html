@@ -117,7 +117,7 @@
                 </li> -->
                 <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Class Payments</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-group-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Group Type </span></a>
+                <li ><a class="d-flex align-items-center" href="manage-student-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Student Type</span></a>
                 </li>
                 <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Fee Type</span></a>
                 </li>
@@ -204,28 +204,43 @@
                 </div>
                 <form action="#">
                   <div class="modal-body">
-                    <label>Exp ID: </label>
+                    
+
+                    <label>User Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Exp id" class="form-control" />
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="rectangle">Select User Name</option>  
+                          <option value="square"></option>
+                          <option value="rectangle"> </option>
+                          <option value="rectangle"></option>    
+                        </select>
+                      </div>  
                     </div>
 
-                    <label>Responsible Name: </label>
+                    <label>Role: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Responsible Name" class="form-control" />
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="rectangle">Select Role</option>  
+                          <option value="square">HeadMaster</option>
+                          <option value="rectangle">Storekeeper</option>
+                          <option value="rectangle">Manager</option>    
+                        </select>
+                      </div>  
                     </div>
-                  </div>
-                  <div class="modal-body">
-                    <label>Exp Type: </label>
+                  
+                    <label>Expenses Type: </label>
                     <div class="form-group">
                       <input type="text" placeholder="Exp Type" class="form-control" />
                     </div>
                   
-                    <div class="modal-body">
+                    
                         <label>Amount: </label>
                         <div class="form-group">
                           <input type="text" placeholder="Amount" class="form-control" />
                         </div>
-                    </div>
+                  
 
                     
                   
@@ -233,10 +248,11 @@
                     <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
                   </div>
+               
                 </div>
                   
                 </form>
-              </div> -->
+              </div> 
              </div> 
                    </div>
                   </div>
@@ -264,7 +280,8 @@
           <thead class="thead-dark">
             <tr>
               <th>Exp ID</th>
-              <th>Responsibe Name</th>
+              <th>User Name</th>
+              <th>Role</th>
               <th>Exp Type</th>
               <th>Amount</th>
               <th>Status</th>
@@ -276,8 +293,9 @@
             <tr>
               <td><span class="font-weight-bold">001</span></td>
               <td>Abdillah</td>
+              <td>Storekeeper</td>
               <td><span class="font-weight-bold">Food Bill</span></td>
-              <td>1000,000</td>
+              <td>1,000,000</td>
                 
             <td><span class="badge badge-pill badge-light-success mr-1">Approved</span></td>
   
@@ -309,6 +327,7 @@
                 <span class="font-weight-bold">002</span>
               </td>
               <td>Baraka </td>
+              <td>Accountant</td>
               <td>Wages & Salary</td>
               <td>300,000,000</td>
               
@@ -338,6 +357,7 @@
                 <span class="font-weight-bold">008 </span>
               </td>
               <td>Muhammad</td>
+              <td>Accountant</td>
               <td>Electricity Bills</td>
               <td>230,000,000</td>
               
@@ -363,6 +383,7 @@
             <tr>
               <td>006</td>
               <td>Mwajuma</td>
+              <td>Accountant</td>
               <td>Maintanace & Repair</td>
               <td>340,000,000</td>
               

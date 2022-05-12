@@ -118,7 +118,7 @@
                 </li> -->
                 <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="class payment">Class Payments</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-group-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="student payment group">Group Type</span></a>
+                <li><a class="d-flex align-items-center" href="manage-student-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Student Type</span></a>
                 </li>
                 <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="fee type">Fee Type</span></a>
                 </li>
@@ -208,21 +208,22 @@
                   <div class="modal-body">
                     <label>First Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
+                      <input type="text" placeholder="first-name" class="form-control" />
                     </div>
 
                     <label>Last Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
+                      <input type="text" placeholder="last-name" class="form-control" />
                     </div>
                     <label>Class : </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
+                      <input type="text" placeholder="class" class="form-control" />
                     </div>
                     <label>Student Type: </label>
                     <div class="form-group">
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
+                          <option value="rectangle">Select Student Types</option>  
                           <option value="square">Full Time</option>
                           <option value="rectangle"> Scholarship</option>
                           <option value="rectangle">Orphan</option>    
@@ -233,7 +234,7 @@
                       <div class="form-group">
                         <div class="form-group">
                           <select class="select2 form-control" id="fee">
-                            <option value="0">Select Type</option>
+                            <option value="0">Select Fee Type</option>
                             <option value="1">School Fee</option>
                             <option value="2">Other Fee</option>
                           </select>
@@ -243,7 +244,7 @@
                       <div class="form-group" id="otherfeemain" style="display: none;">
                         <div class="form-group">
                           <select class="select2 form-control" id="default-select">
-                            <option value="square">Select other Type</option>
+                            <option value="square">Select other Fee Type</option>
                             <option value="square">Examination Fee</option>
                             <option value="rectangle">Tour Fee</option>
                             <option value="rectangle">Registration Fee</option>
@@ -281,7 +282,7 @@
                 </div>
                   
                 </form>
-              </div> -->
+              </div> 
              </div> 
                    </div>
                   </div>
@@ -292,101 +293,7 @@
          </div>
 
 </div>
-        <!-- <div class="form-modal-ex"> -->
-          <!-- Button trigger modal -->
-          <!-- <div class="text-right">
-            <div class="btn-group mr-2">
-            <button
-              type="button"
-              class="btn btn-dark me-1 w-sm-100"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false">
-              Import
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void(0);">csv</a>
-              <a class="dropdown-item" href="javascript:void(0);">pdf</a>
-              <a class="dropdown-item" href="javascript:void(0);">excel</a>
-            </div>
-          </div> -->
-          <!-- <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
-           Add user
-          </button></div> -->
-          <!-- Modal -->
-          <!-- <div
-            class="modal fade text-right"
-            id="inlineForm"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="myModalLabel33"
-            aria-hidden="true"
-          > -->
-            <!-- <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <form action="#">
-                  <div class="modal-body">
-                    <label>First Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
-                    </div>
-
-                    <label>Last Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <label>Email: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
-                    </div>
-
-                    <label>Status: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
-                  
-      
-                    <label>Role: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Admin</option>
-                          <option value="rectangle">Member</option>
-                          <option value="rectangle">Assist admin</option>  
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
-                  </div>
-                </div>
-                  
-                </form>
-              </div> -->
-            <!-- </div> -->
-          <!-- </div>
-        </div> -->
+        
         <!-- Table head options start -->
 <div class="row mt-2" id="table-head">
   <div class="col-12">

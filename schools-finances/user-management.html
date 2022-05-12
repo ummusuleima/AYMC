@@ -109,7 +109,7 @@
                 </li> -->
                 <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="class payment">Class Payments</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-group-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="student payment group">Group Type Management</span></a>
+                <li><a class="d-flex align-items-center" href="manage-student-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Student Type</span></a>
                 </li>
                 <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="fee type">Fee Type</span></a>
                 </li>
@@ -176,7 +176,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add user
+                       Add User
                    </button></div>
                    <!-- Modal -->
            <div
@@ -190,7 +190,7 @@
            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
+                  <h4 class="modal-title" id="myModalLabel33">Add User</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
@@ -199,29 +199,26 @@
                   <div class="modal-body">
                     <label>First Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
+                      <input type="text" placeholder="first-name" class="form-control" />
                     </div>
 
                     <label>Last Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
+                      <input type="text" placeholder="last-name" class="form-control" />
                     </div>
                   </div>
                   <div class="modal-body">
                     <label>Email: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
+                      <input type="text" placeholder="email" class="form-control" />
                     </div>
 
-                    <!-- <label>Status: </label>
+                    <label>Adress: </label>
                     <div class="form-group">
                       <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
+                        <input type="text" placeholder="asddress" class="form-control" />
                       </div>  
-                    </div> -->
+                    </div>
                   
       
                     <label>Role: </label>
@@ -259,101 +256,7 @@
          </div>
 
 </div>
-        <!-- <div class="form-modal-ex"> -->
-          <!-- Button trigger modal -->
-          <!-- <div class="text-right">
-            <div class="btn-group mr-2">
-            <button
-              type="button"
-              class="btn btn-dark me-1 w-sm-100"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false">
-              Import
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a class="dropdown-item" href="javascript:void(0);">csv</a>
-              <a class="dropdown-item" href="javascript:void(0);">pdf</a>
-              <a class="dropdown-item" href="javascript:void(0);">excel</a>
-            </div>
-          </div> -->
-          <!-- <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
-           Add user
-          </button></div> -->
-          <!-- Modal -->
-          <!-- <div
-            class="modal fade text-right"
-            id="inlineForm"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="myModalLabel33"
-            aria-hidden="true"
-          > -->
-            <!-- <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add user</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <form action="#">
-                  <div class="modal-body">
-                    <label>First Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
-                    </div>
-
-                    <label>Last Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="modal-body">
-                    <label>Email: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
-                    </div>
-
-                    <label>Status: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
-                  
-      
-                    <label>Role: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Admin</option>
-                          <option value="rectangle">Member</option>
-                          <option value="rectangle">Assist admin</option>  
-                        </select>
-                      </div>
-                      
-                      
-                      
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
-                  </div>
-                </div>
-                  
-                </form>
-              </div> -->
-            <!-- </div> -->
-          <!-- </div>
-        </div> -->
+        
         <!-- Table head options start -->
 <div class="row mt-2" id="table-head">
   <div class="col-12">
@@ -372,7 +275,7 @@
               <th>First name</th>
               <th>Last name</th>
               <th>Email</th>
-              <!-- <th>Status</th> -->
+              <th>Adress</th>
               <th>Role</th>
               <th>Action</th>
             </tr>
@@ -382,9 +285,10 @@
               <td><span class="font-weight-bold">Abubakar </span></td>
               <td>Sadik</td>
               <td><span class="font-weight-bold">asadik@gmail.com </span></td>
+              <td>Tanga</td>
               <td>Accountant</td>
                 
-            <!-- <td><span class="badge badge-pill badge-light-primary mr-1">Active</span></td> -->
+            
   
               <td>
                 
@@ -416,45 +320,9 @@
               </td>
               <td>Ayoub</td>
               <td>Malik@gmail.com</td>
+              <td>Dar es salaam</td>
               <td>Accountant</td>
               
-              <!--
-              <td>
-                
-                <div class="avatar-group">
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Lilian Nenez"
-                  >
-                    
-                  </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                </div>
-              </td>-->
-              <!-- <td><span class="badge badge-pill badge-light-success mr-1">Completed</span></td> -->
               <td>
                 <div class="dropdown">
                   <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
@@ -481,6 +349,7 @@
               </td>
               <td>Yahya</td>
               <td>adulyah@gmail.com</td>
+              <td>Tanga</td>
               <td>Head Master</td>
               
               <td>
@@ -509,6 +378,7 @@
               </td>
               <td>Khatib</td>
               <td>adulkhat@gmail.com</td>
+              <td>Tanga</td>
               <td>Manager</td>
               
               <td>
@@ -537,6 +407,7 @@
               </td>
               <td>Mahad</td>
               <td>feymah@gmail.com</td>
+              <td>Tanga</td>
               <td>Headmaster</td>
               
               <td>
