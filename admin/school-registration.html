@@ -110,10 +110,7 @@
           </li>
           <li class="active nav-item"><a class="d-flex align-items-center" href="school-registration.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Schools Registration</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="member_registration.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Member Registration</span></a>
-          </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="accountant-reg.html"><i data-feather='user-plus'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Accountant Registration</span></a>
-          </li>
+         
           <li class=" nav-item"><a class="d-flex align-items-center" href="user_manage.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="expenses.html"><i data-feather='dollar-sign'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenses</span></a>
@@ -179,7 +176,7 @@
                          <div class="form-modal-ex">
                         <div class="text-right">
                         <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
-                          <i data-feather='user-plus'></i>
+                          <i data-feather='school'></i>
                          Add school
                         </button>
                          </div>
@@ -203,32 +200,39 @@
                 </div>
                   <form action="#">
                   <div class="modal-body">
-                    <label>School ID: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="First-name" class="form-control" />
-                   </div>
                     <label>School Name: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Last-name" class="form-control" />
+                      <input type="text" placeholder="school-name" class="form-control" />
                     </div>
                   </div>
                   <div class="modal-body">
                     <label>Location: </label>
                     <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
+                      <input type="text" placeholder="location" class="form-control" />
                     </div>
 
+                  </div>
+                  <div class="modal-body">
                     <label>Email: </label>
                     <div class="form-group">
-                      
-                      <input type="date" placeholder="date" class="form-control"  />
+                      <input type="email" placeholder="email" class="form-control" />
                     </div>
+
+                  </div>
+
+                  <div class="modal-body">
+                    <label>Date: </label>
+                    <div class="form-group">
+                      <input type="date" placeholder="date" class="form-control" />
+                    </div>
+
+                  </div>
+
+                    
                     
                   
-                    
-                    <label>Status: </label>
-                    
-                    <div class="form-group">
+                    <div class="modal-body">
+                    <label>Status: </label>                  
                       <div class="form-group">
                         <select class="select2 form-control" id="default-select">
                           <option value="square">Active</option>
@@ -236,12 +240,14 @@
                         </select>
                       </div>
                      </div>
+
+                     <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    </div>
                   </div>
                 <div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                  </div> 
+                  
                 </div>
                 </form>
               </div>
@@ -257,7 +263,7 @@
                       <table class="table">
                         <thead class="thead-dark">
                           <tr>
-                            <th>School ID</th>
+                           
                             <th>School Name</th>
                             <th>location</th>
                             <th>Email</th>
@@ -270,94 +276,15 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td><span class="font-weight-bold">01 </span></td>
-                            <td>Istiqama islamic</td>
-                            <td><span class="font-weight-bold">Kigoma </span>
+                        
+                            <td>Istiqama Islamic</td>
+                            <td><span class="font-weight-bold">Kigoma </span> </td>
                               
                             <td><span>istiqamaa @gmail.com</span></td>
                             <td>1 Jan 2022</td>
                             <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
-                            <td>
+                            
                 
-                              <div class="dropdown">
-                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                                  <i data-feather="more-vertical"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="edit-2" class="mr-50"></i>
-                                    <span>Edit</span>
-                                  </a>
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="trash" class="mr-50"></i>
-                                    <span>Delete</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><span class="font-weight-bold">01 </span></td>
-                            <td>Istiqama islamic</td>
-                            <td><span class="font-weight-bold">Kigoma </span>
-                              
-                            <td><span>istiqamaa @gmail.com</span></td>
-                            <td>1 Jan 2022</td>
-                            <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
-                            <td>
-                
-                              <div class="dropdown">
-                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                                  <i data-feather="more-vertical"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="edit-2" class="mr-50"></i>
-                                    <span>Edit</span>
-                                  </a>
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="trash" class="mr-50"></i>
-                                    <span>Delete</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><span class="font-weight-bold">01 </span></td>
-                            <td>Istiqama islamic</td>
-                            <td><span class="font-weight-bold">Kigoma </span>
-                              
-                            <td><span>istiqamaa @gmail.com</span></td>
-                            <td>1 Jan 2022</td>
-                            <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
-                            <td>
-                
-                              <div class="dropdown">
-                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                                  <i data-feather="more-vertical"></i>
-                                </button>
-                                <div class="dropdown-menu">
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="edit-2" class="mr-50"></i>
-                                    <span>Edit</span>
-                                  </a>
-                                  <a class="dropdown-item" href="javascript:void(0);">
-                                    <i data-feather="trash" class="mr-50"></i>
-                                    <span>Delete</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><span class="font-weight-bold">01 </span></td>
-                            <td>Rashida wanjara</td>
-                            <td><span class="font-weight-bold">0678543456 </span>
-                              
-                            <td><span>rashida @gmail.com</span></td>
-                            <td>1 Jan</td>
-                            <td><span class="badge badge-pill badge-light-danger mr-1"> In Active</span></td>
                             <td>
                 
                               <div class="dropdown">
@@ -378,6 +305,97 @@
                               </div>
                               
                             </td>
+                           
+                          </tr>
+                          <tr>
+                           
+                            <td>Istiqama islamic</td>
+                            <td><span class="font-weight-bold">Kigoma </span> </td>
+                              
+                            <td><span>istiqamaa @gmail.com</span></td>
+                            <td>1 Jan 2022</td>
+                            <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
+                            <td>
+                
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                                  <i data-feather="more-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                    <i data-feather="edit-2" class="mr-50"></i>
+                                    <span>Edit</span>
+                                  </a>
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                    <i data-feather="trash" class="mr-50"></i>
+                                    <span>Delete</span>
+                                  </a>
+                                </div>
+                                
+                              </div>
+                              
+                            </td>
+                          </tr>
+
+
+                          <tr>
+                            <td>Istiqama islamic</td>
+                            <td><span class="font-weight-bold">Kigoma </span> </td>
+                              
+                            <td><span>istiqamaa @gmail.com</span></td>
+                            <td>1 Jan 2022</td>
+                            <td><span class="badge badge-pill badge-light-success mr-1">Active</span></td>
+                            <td>
+                
+                              <div class="dropdown">
+                                <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                                  <i data-feather="more-vertical"></i>
+                                </button>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                    <i data-feather="edit-2" class="mr-50"></i>
+                                    <span>Edit</span>
+                                  </a>
+                                  <a class="dropdown-item" href="javascript:void(0);">
+                                    <i data-feather="trash" class="mr-50"></i>
+                                    <span>Delete</span>
+                                  </a>
+                                </div>
+                                
+                              </div>
+                              
+                            </td>
+                          </tr>
+
+
+                          <tr>             
+                            <td>Rashida wanjara</td>
+                            <td><span class="font-weight-bold">0678543456 </span> </td>
+                              
+                            <td><span>rashida @gmail.com</span></td>
+                            <td>1 Jan</td>
+                            <td><span class="badge badge-pill badge-light-danger mr-1"> In Active</span></td>
+
+                            <td>
+                
+                <div class="dropdown">
+                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
+                    <i data-feather="more-vertical"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <i data-feather="edit-2" class="mr-50"></i>
+                      <span>Edit</span>
+                    </a>
+                    <a class="dropdown-item" href="javascript:void(0);">
+                      <i data-feather="trash" class="mr-50"></i>
+                      <span>Delete</span>
+                    </a>
+                  </div>
+                  
+                </div>
+                
+              </td>
                           </tr>
                         
                         </tbody>
