@@ -90,7 +90,7 @@
                           <option value="">Select Subsystem</option>
                           <option value="admin">Admin</option>
                           <option value="members">Members</option>
-                          <option value="offerings-tiths">Offerings-tiths</option>
+                          
                           <option value="schools-finances">Schools-finances</option>
                           <option value="central">Central</option>     
                         </select>
@@ -151,10 +151,12 @@
           } else if (valueSelected == "members"){
             $("#login").attr("href", "../members/index.html");
             $("#login").removeClass("disabled");
-          } else if(valueSelected == "offerings-tiths"){
-            $("#login").attr("href", "../offerings-tiths/offer_index.html");
-            $("#login").removeClass("disabled");
-          } else if(valueSelected == "schools-finances"){
+          }
+          //  else if(valueSelected == "offerings-tiths"){
+          //   $("#login").attr("href", "../offerings-tiths/offer_index.html");
+          //   $("#login").removeClass("disabled");
+          // } 
+          else if(valueSelected == "schools-finances"){
             $("#login").attr("href", "../schools-finances/index.html");
             $("#login").removeClass("disabled");
           } else if(valueSelected == "central"){
