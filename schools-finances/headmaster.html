@@ -71,7 +71,7 @@
               <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">Aklan Mustapha</span><span class="user-status">Admin</span></div><span class="avatar"><img class="round" src="../assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span></a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
               <a class="dropdown-item" href=""><i class="mr-50" data-feather="user"></i> Profile</a>
-
+              
               <a class="dropdown-item" href="../auth/login.html"><i class="mr-50" data-feather="power"></i> Logout</a>
             </div>
           </li>
@@ -102,37 +102,36 @@
         </ul>
       </div>
       <div class="shadow-bottom"></div>
-      
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
           
-          <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="dashboard">Dashboard</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Email">Dashboard</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="Student Registration.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Student Registration</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="user-management.html"><i data-feather='users'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">User Management</span></a>
           </li>
-          <li class=" nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="school management">Configuration</span></a>
+          <li class="   nav-item"><a class="d-flex align-items-center" href="management.html"><i data-feather='settings'></i></i></i><span class="menu-title text-truncate" data-i18n="member_registration">Configuration</span></a>
             <ul>
-                <!-- <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="school registration">School Registration</span></a>
+                <!-- <li><a class="d-flex align-items-center" href="manage-school-registration.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report1">School Registration</span></a>
                 </li> -->
-                <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="class payment">Payment Scheme</span></a>
+                <li><a class="d-flex align-items-center" href="manage-class-payment.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Payment Scheme</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-student-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Student Categories</span></a>
+                <li ><a class="d-flex align-items-center" href="manage-student-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report3">Student Categories</span></a>
                 </li>
-                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="fee type">Fee Type</span></a>
+                <li><a class="d-flex align-items-center" href="manage-fee-type.html"><i data-feather="bar-chart"></i><span class="menu-item text-truncate" data-i18n="report2">Fee Type</span></a>
                 </li>
                 
-
                 
               </ul>
           </li>
           
-          <li class=" active nav-item"><a class="d-flex align-items-center" href="fee-transaction.html"><i data-feather='dollar-sign'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Fee Transaction</span></a>
+          <li class=" nav-item"><a class="d-flex align-items-center" href="fee-transaction.html"><i data-feather='dollar-sign'></i></i></i><span class="menu-title text-truncate" data-i18n="user_manage">Fee Transaction</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="expenditure.html"><i data-feather='dollar-sign'></i></i><span class="menu-title text-truncate" data-i18n="expenses">Expenses</span></a>
           </li>
-          <li class="  nav-item"><a class="d-flex align-items-center" href="headmaster.html"><i data-feather='dollar-sign'></i></i><span class="menu-title text-truncate" data-i18n="expenses">HeadMaster</span></a>
+
+          <li class=" active nav-item"><a class="d-flex align-items-center" href="headmaster.html"><i data-feather='dollar-sign'></i></i><span class="menu-title text-truncate" data-i18n="expenses">HeadMaster</span></a>
           </li>
           <li class=" nav-item"><a class="d-flex align-items-center" href="reports.html"><i data-feather='save'></i><span class="menu-title text-truncate" data-i18n="report">Reports</span></a>
             <ul>
@@ -162,7 +161,7 @@
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h2>Fee Transaction Management</h2>
+                <h2>Expenditure</h2>
                 
 
                 <div class="row">  
@@ -187,7 +186,7 @@
                   <div class="text-right">
                    <button type="button" class="btn btn-dark" id = "right" data-toggle="modal" data-target="#inlineForm">
                     <i data-feather='user-plus'></i>
-                       Add Fee Transaction
+                       Add Expenses
                    </button></div>
                    <!-- Modal -->
            <div
@@ -201,86 +200,58 @@
            <div class="modal-dialog modal-dialog-centered" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel33">Add Fee Transaction</h4>
+                  <h4 class="modal-title" id="myModalLabel33">Add Expenses</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <form action="#">
                   <div class="modal-body">
-                    <label>First Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="first-name" class="form-control" />
-                    </div>
-
-                    <label>Last Name: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="last-name" class="form-control" />
-                    </div>
-                    <label>Class : </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="class" class="form-control" />
-                    </div>
-                    <label>Student Type: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="rectangle">Select Student Types</option>  
-                          <option value="square">Full Time</option>
-                          <option value="rectangle"> Scholarship</option>
-                          <option value="rectangle">Orphan</option>    
-                        </select>
-                      </div>  
-                    </div>
-                     <label>Fee Type: </label>
-                      <div class="form-group">
-                        <div class="form-group">
-                          <select class="select2 form-control" id="fee">
-                            <option value="0">Select Fee Type</option>
-                            <option value="1">School Fee</option>
-                            <option value="2">Other Fee</option>
-                          </select>
-                        </div>  
-                      </div>
-                      <label id="otherfeetlt" style="display: none;">Other Fee Type: </label>
-                      <div class="form-group" id="otherfeemain" style="display: none;">
-                        <div class="form-group">
-                          <select class="select2 form-control" id="default-select">
-                            <option value="square">Select other Fee Type</option>
-                            <option value="square">Examination Fee</option>
-                            <option value="rectangle">Tour Fee</option>
-                            <option value="rectangle">Registration Fee</option>
-                          </select>
-                        </div>  
-                      </div>
-                      <label>Upload: </label>
-                      <div class="form-group">
-                        <input type="text" placeholder="Upload" class="form-control" />
-                      </div> 
-                  </div>
-                  <div class="modal-body">
-                    <!-- <label>Email: </label>
-                    <div class="form-group">
-                      <input type="text" placeholder="Email Address" class="form-control" />
-                    </div> -->
-
-                    <!-- <label>Status: </label>
-                    <div class="form-group">
-                      <div class="form-group">
-                        <select class="select2 form-control" id="default-select">
-                          <option value="square">Active</option>
-                          <option value="rectangle">Passive</option>  
-                        </select>
-                      </div>  
-                    </div> -->
-                  
-      
                     
-                  </div>
+
+                    <label>User Name: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="rectangle">Select User Name</option>  
+                          <option value="square"></option>
+                          <option value="rectangle"> </option>
+                          <option value="rectangle"></option>    
+                        </select>
+                      </div>  
+                    </div>
+
+                    <label>Role: </label>
+                    <div class="form-group">
+                      <div class="form-group">
+                        <select class="select2 form-control" id="default-select">
+                          <option value="rectangle">Select Role</option>  
+                          <option value="square">HeadMaster</option>
+                          <option value="rectangle">Storekeeper</option>
+                          <option value="rectangle">Manager</option>    
+                        </select>
+                      </div>  
+                    </div>
+                  
+                    <label>Expenses Type: </label>
+                    <div class="form-group">
+                      <input type="text" placeholder="Exp Type" class="form-control" />
+                    </div>
+                  
+                    
+                        <label>Amount: </label>
+                        <div class="form-group">
+                          <input type="text" placeholder="Amount" class="form-control" />
+                        </div>
+                  
+
+                    
+                  
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success" data-dismiss="modal">Submit</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">cancel</button>
                   </div>
+               
                 </div>
                   
                 </form>
@@ -295,7 +266,7 @@
          </div>
 
 </div>
-        
+
         <!-- Table head options start -->
 <div class="row mt-2" id="table-head">
   <div class="col-12">
@@ -311,209 +282,123 @@
         <table class="table">
           <thead class="thead-dark">
             <tr>
-              <th>First name</th>
-              <th>Last name</th>
-              <th>Class</th>
-              <th>Student Type</th>
-              <th>Fee Type</th>
-              <th>Fee Structure</th>
-              <th>Amount Paid</th>
-              <th>Amount remaind</th>
-              <th>Attachment</th>
+              <th>Exp ID</th>
+              <th>User Name</th>
+              <th>Role</th>
+              <th>Exp Type</th>
+              <th>Amount</th>
+            
               <th>Action</th>
-           
               
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="font-weight-bold">Ilham</span></td>
-              <td>Khatib</td>
-              <td> class seven</td>
+              <td><span class="font-weight-bold">001</span></td>
+              <td>Abdillah</td>
+              <td>Storekeeper</td>
+              <td><span class="font-weight-bold">Food Bill</span></td>
+              <td>1,000,000</td>
                 
-            <td>Orphan</td>
-            <td>School Fee</td>
-            <td>10% of school Fee</td>
-            <td>50,000</td>
-            <td>20,000</td>
-            <td>
-            <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
-          </td>
-
+           
   
-              <td>
-                
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="file" class="mr-50"></i>
-                      <span>Receipt</span>
-                    </a>
+            <td class="row">
+                <div class="d-flex justify-content-between" style="float: left;">
+                    <button class="btn btn-success btn-next text-white">  
+                        <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
+                      <span class="align-middle d-sm-inline-block d-none">Approve</span>
+                      
+                    </button>
+                  </div> 
+          
+                  <div class="d-flex justify-content-between" style="float: left; padding-left: 5px;">
+                    <button class="btn btn-danger"  data-toggle="modal" data-target="#rejectModal"> <i data-feather='thumbs-down'></i>Reject</button>
+                        
+                      
+                    </button>
                   </div>
-                  
-                </div>
-                
-              </td>
-              
-              
+            </td>
             </tr>
             <tr>
               <td>
                 
-                <span class="font-weight-bold">Baraka</span>
+                <span class="font-weight-bold">002</span>
               </td>
-              <td>Shaban</td>
-              <td>Class six</td>
+              <td>Baraka </td>
+              <td>Accountant</td>
+              <td>Wages & Salary</td>
+              <td>300,000,000</td>
               
               
-              <td>Scholarship</td>
-              <td>Examination Fee</td>
-              <td>80% 0f Exam Fee</td>
-              <td>10,000</td>
-              <td>6,000</td>
-              <td>
-              <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
-            </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="file" class="mr-50"></i>
-                      <span>Receipt</span>
-                    </a>
+              
+              <td class="row">
+                <div class="d-flex justify-content-between" style="float: left;">
+                    <button class="btn btn-success btn-next text-white">  
+                        <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
+                      <span class="align-middle d-sm-inline-block d-none">Approve</span>
+                      
+                    </button>
+                  </div> 
+          
+                  <div class="d-flex justify-content-between" style="float: left; padding-left: 5px;">
+                    <button class="btn btn-danger"  data-toggle="modal" data-target="#rejectModal"> <i data-feather='thumbs-down'></i>Reject</button>
+                        
+                      
+                    </button>
                   </div>
-                </div>
-              </td>
-            
+            </td>
             </tr>
             <tr>
               <td>
                 
-                <span class="font-weight-bold">Abdurahman </span>
+                <span class="font-weight-bold">008 </span>
               </td>
-              <td>Yahya</td>
-              <td>Class Five</td>
+              <td>Muhammad</td>
+              <td>Accountant</td>
+              <td>Electricity Bills</td>
+              <td>230,000,000</td>
               
-              <td>Full time</td>
-              <td>Registration Fee</td>
-              <td>100% of Reg Fee</td>
-              <td>50,000</td>
-              <td>50,000</td>
-              <td>
-              <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
-            </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="file" class="mr-50"></i>
-                      <span>Receipt</span>
-                    </a>
-                  </div>
-                </div>
-              </td>
              
+              <td class="row">
+                <div class="d-flex justify-content-between" style="float: left;">
+                    <button class="btn btn-success btn-next text-white">  
+                        <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
+                      <span class="align-middle d-sm-inline-block d-none">Approve</span>
+                      
+                    </button>
+                  </div> 
+          
+                  <div class="d-flex justify-content-between" style="float: left; padding-left: 5px;">
+                    <button class="btn btn-danger"  data-toggle="modal" data-target="#rejectModal"> <i data-feather='thumbs-down'></i>Reject</button>
+                        
+                      
+                    </button>
+                  </div>
+            </td>
             </tr>
             <tr>
-              <td>Muhsin</td>
-              <td>abdumalik</td>
-              <td>class Two</td>
-              <!--<td>
-                <div class="avatar-group">
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Lilian Nenez"
-                  >
-                    
+              <td>006</td>
+              <td>Mwajuma</td>
+              <td>Accountant</td>
+              <td>Maintanace & Repair</td>
+              <td>340,000,000</td>
+              
+              <td class="row">
+                <div class="d-flex justify-content-between" style="float: left;">
+                    <button class="btn btn-success btn-next text-white">  
+                        <i data-feather="thumbs-up" class="align-middle ml-sm-25 ml-0"></i>
+                      <span class="align-middle d-sm-inline-block d-none">Approve</span>
+                      
+                    </button>
+                  </div> 
+          
+                  <div class="d-flex justify-content-between" style="float: left; padding-left: 5px;">
+                    <button class="btn btn-danger"  data-toggle="modal" data-target="#rejectModal"> <i data-feather='thumbs-down'></i>Reject</button>
+                        
+                      
+                    </button>
                   </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                  <div
-                    data-toggle="tooltip"
-                    data-popup="tooltip-custom"
-                    data-placement="top"
-                    title=""
-                    class="avatar pull-up my-0"
-                    data-original-title="Alberto Glotzbach"
-                  >
-                    
-                  </div>
-                </div>
-              </td> -->
-              <td>Scholarship</td>
-              <td>School Fee</td>
-              <td>80% of School Fee</td>
-              <td>100,000</td>
-              <td>60,000</td>
-              <td>
-              <a href="#addAttachmentModal" style="color: blue;" data-toggle="modal" title="Add Attachments"><i data-feather="paperclip"></i></a>
             </td>
-              <td>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-sm dropdown-toggle hide-arrow" data-toggle="dropdown">
-                    <i data-feather="more-vertical"></i>
-                  </button>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="edit-2" class="mr-50"></i>
-                      <span>Edit</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="trash" class="mr-50"></i>
-                      <span>Delete</span>
-                    </a>
-                    <a class="dropdown-item" href="javascript:void(0);">
-                      <i data-feather="file" class="mr-50"></i>
-                      <span>Receipt</span>
-                    </a>
-                  </div>
-                </div>
-            
             </tr>
           </tbody>
         </table>
@@ -529,36 +414,49 @@
 </div>
 
 
-
-
-<div id="addAttachmentModal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form>
-        <div class="modal-header" style="background-color:black ;">            
-          <h4 class="modal-title" style="color : white !important;">Add Attachment</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        </div>
-        <div class="modal-body">     
-        <!-- <section id="input-file-browser"> -->
-          <div class="row">
-            <div class="col-12">
-              <label class="col-form-label pt-0" for="role">Payment receipt</label>
-             <input class="form-control" type="file">
+<div id="rejectModal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header" style="background-color: black;">            
+            <h4 class="modal-title" style="color:#fff !important;">Reasons To Reject</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
           </div>
-          
+          <div class="modal-body">          
+            <section class="basic-textarea">
+              <div class="row">
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Reasons on Rejected Expenses</label>
+                            <textarea
+                              class="form-control"
+                              id="exampleFormControlTextarea1"
+                              rows="3"
+                              placeholder=""
+                            ></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>   
+            
+
+          </div>
+          <div class="modal-footer">
+            <input type="button" class="btn btn-danger" data-dismiss="modal" value="Cancel">
+            <input type="submit" class="btn btn-success"  data-dismiss="modal" value="Ok">
+          </div>
+        </form>
       </div>
-      
-        <!-- </section>    -->
-    </div>
-     <div class="modal-footer">
-          <input type="button" class="btn btn-success" data-dismiss="modal" value="Add">
-          <input type="submit" class="btn btn-danger"  data-dismiss="modal"value="Cancel">
-        </div>
-      </form>
     </div>
   </div>
-</div>
 
 <!-- Table head options end -->
         <div class="content-body">
@@ -606,16 +504,6 @@
     <!-- END: Page JS-->
 
     <script>
-      document.getElementById("fee");
-      $('select').on('change', function() {
-        if(this.value==2){
-          $('#otherfeetlt').css("display", "block");
-          $('#otherfeemain').css("display", "block");
-        }else if (this.value==1){
-          $('#otherfeetlt').css("display", "none");
-          $('#otherfeemain').css("display", "none");
-        }
-      });
       $(window).on('load',  function(){
         if (feather) {
           feather.replace({ width: 14, height: 14 });
